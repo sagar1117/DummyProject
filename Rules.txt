@@ -1,0 +1,128 @@
+API solutions aggregate data from varied sources, so you only need to input the data once to perform an in-depth KYC check. This centralized process can help manage the complexity of onboarding and monitoring customers
+
+
+
+
+banking
+https://lex.infosysapps.com/viewer/pdf/lex_auth_01281293831799603220012?collectionId=lex_auth_01281333654842572820278&amp;collectionType=Course#error=login_required&state=811143b6-c7ae-4d70-bd46-56658ab3d469
+
+
+
+Banking
+
+https://lex.infosysapps.com/app/toc/lex_auth_01281333654842572820278/overview
+
+
+
+Lex payment moudule
+https://lex.infosysapps.com/viewer/pdf/lex_auth_01281416159328665620444?collectionId=lex_auth_01282121812755251242367&collectionType=Collection&viewMode=START
+
+https://lex.infosysapps.com/viewer/pdf/lex_auth_01281426092797952020447?collectionId=lex_auth_01282131879020134442420&amp;collectionType=Collection&amp;viewMode=START
+
+
+
+selenium  mock
+
+https://iap.infosysapps.com/contest/contest_5c40658c898791000110caeb
+
+
+https://www.selenium.dev/downloads/
+
+https://www.oracle.com/in/java/technologies/javase-downloads.html
+System.setProperty("webdriver.chrome.driver","C:\\Driver\\chromedriver_win32 (3)\\chromedriver.exe");
+		
+		   WebDriver driver;
+			
+			driver=new ChromeDriver();
+			
+		
+		driver.get("https://katalon-demo-cura.herokuapp.com/");
+
+
+		
+https://lex.infosysapps.com/app/toc/lex_auth_01281507634885427220494/contents
+		
+selenium basic
+Selenium Basics: https://lex.infosysapps.com/app/toc/lex_14025343383587045000/overview
+
+certificaton
+Selenium Basic Certification: https://lex.infosysapps.com/app/toc/lex_auth_012602497545617408431/overview
+
+
+
+
+
+
+
+
+
+https://chromedriver.chromium.org/downloads----------83
+
+mock certification
+
+https://iap.infosysapps.com/contest/contest_5c40658c898791000110caeb
+
+
+https://www.youtube.com/watch?v=_YmuR4aw9pM&t=246s
+
+JAR files
+
+client-combined-3.0.1-nodeps
+
+
+selenium-server-standalone-3.0.1
+
+
+
+
+
+https://lex.infosysapps.com/viewer/web-module/lex_auth_012702079729590272364?collectionId=lex_14025343383587045000&collectionType=Course&viewMode=RESUME
+
+demo app--automation
+https://katalon-demo-cura.herokuapp.com/
+
+http://demo.guru99.com/test/web-table-element.php---dynamic table
+
+http://10.82.181.26/Automation/DemoApps/FrameExample.aspx
+
+http://10.82.181.26/Automation/DemoApps/FrameExample.aspx
+
+https://www.seleniumeasy.com/test/drag-and-drop-demo.html--drag and drop
+
+
+
+https://www.seleniumeasy.com/test/javascript-alert-box-demo.html
+
+lex for seleium
+Lex_14025343383587045000
+
+seleium playground
+https://lex.infosysapps.com/viewer/iap/lex_auth_0126129898935255041101
+
+
+https://lex.infosysapps.com/app/toc/lex_auth_0126129898935255041101/overview
+
+
+
+eclipse download
+https://www.eclipse.org/downloads/packages/
+download language binder
+https://selenium-release.storage.googleapis.com/3.141/selenium-java-3.141.59.zip
+
+https://infosys.webex.com/webappng/sites/infosys/meeting/download/a368c1fd0e8776709361a9fadf1ecfe6
+https://lex.infosysapps.com/app/toc/lex_auth_01281507634885427220494/contents
+
+testin day 1
+https://infosys.webex.com/webappng/sites/infosys/meeting/download/7a8636126c5e4558be495d0fa196e595?siteurl=infosys&MTID=m61727151a3471bf08964ad23d0e7d378
+
+Lex links for testing day 1
+https://lex.infosysapps.com/viewer/web-module/lex_auth_012638639724691456850?collectionId=lex_15663340442899108000&collectionType=Course&viewMode=RESUME
+https://lex.infosysapps.com/viewer/web-module/lex_auth_01268729973880422498?collectionId=lex_22674518706394570000&collectionType=Course&viewMode=RESUME
+
+
+testing Day 2
+https://infosys.webex.com/webappng/sites/infosys/meeting/download/841b9522248944b0ada5ecd0829bd298
+Agile :- lex_18835729696905850000
+Devops :- lex_15987705621528664000
+
+
