@@ -1,43 +1,144 @@
-package ReadExcel;
+package com.test;
 
-import java.util.List;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+public class Demo001_JUnitAnnotations {
 
-public class Dropdown {
+	@BeforeClass
+	public static void beforeClass(){
+		System.out.println("Inside before class method");
+	}
 
-	public static void main(String[] args) throws Exception { 
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","C:\\Driver\\chromedriver_win32 (3)\\chromedriver.exe");
-		
-		      WebDriver driver;	   
-			
-		    	driver=new ChromeDriver();
-			
-		
-		driver.get("https://www.facebook.com/");
-		WebElement dropdown= driver.findElement(By.id("month"));
-		Select month=new  Select(dropdown);
-		
-		
-	List <WebElement>  totalemenets=	 month.getOptions();
-	System.out.println(totalemenets.size());
-          
-	 for(WebElement ele:totalemenets)
-	 {
-		String Names= ele.getText();
-		System.out.println(Names);
-		 
-	 }
-	 
+	@Before
+	public void before(){
+		System.out.println("Inside before method");
+	}
+
+	@Test
+	public void test() {
+		System.out.println("Inside testmethod");
+	}
 	
-   
+	
+	
+	package com.test;
+
+	import org.junit.After;
+	import org.junit.AfterClass;
+	import org.junit.Before;
+	import org.junit.BeforeClass;
+	import org.junit.Test;
+
+	public class Demo001_JUnitAnnotations {
+
+		@BeforeClass
+		public static void beforeClass(){
+			System.out.println("Inside before class method");
+		}
+
+		@Before
+		public void before(){
+			System.out.println("Inside before method");
+		}
+
+		@Test
+		public void test() {
+			System.out.println("Inside testmethod");
+		}
+
+		@After
+		public void after(){
+			System.out.println("Inside after method");
+		}
+
+		@AfterClass
+		public static void afterClass(){
+			System.out.println("Inside after class method");
+		}
+
+	
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	@After
+	public void after(){
+		System.out.println("Inside after method");
+	}
+
+	@AfterClass
+	public static void afterClass(){
+		System.out.println("Inside after class method");
 	}
 
 }
