@@ -51,7 +51,7 @@ String url = "http://localhost:8080/application/";
 		for(String winHandle : driver.getWindowHandles()){
     			driver.switchTo().window(winHandle);
 		}
-		String currentURL =  driver.Url;
+		String url = driver.getCurrentUrl();
 		print(currentURL)
 		actualTitle = driver.getTitle();
        		assertTrue("Bootstrap Example".equals(actualTitle));
@@ -64,8 +64,24 @@ String url = "http://localhost:8080/application/";
 		{
     			System.out.println(e.get(l).getText());
 		}
+		driver.findElement(By.id("")).click(); // take away
 		
-		
+		String filepath = "/root/Desktop/user_repo/To_Participant/AdditionalSuppliedFiles/Order.xls";
+		 FileInputStream filestream = new FileInputStream(filepath);
+		 HSSFWorkbook workbook = new HSSFWorkbook(filestream);
+		 HSSFSheet sheet = workbook.getSheet("");/check sheet name
+		 
+		 Select dropdown1 = new Select(driver.findElement(By.id("")));//main dish
+		 dropdown.selectByValue(String.valueOf((int)sheet.getRow(1).getCell(1).getNumericCellValue()));
+		 
+		 Select dropdown2 = new Select(driver.findElement(By.id(""))); // curry
+		 dropdown.selectByValue(String.valueOf((int)sheet.getRow(1).getCell(2).getNumericCellValue()));
+		 
+		 driver.findElement(By.id("mobile")).sendKeys(String.valueOf((int)sheet.getRow(1).getCell(3).getNumericCellValue()));
+		 
+		 driver.findElement(By.id("email")).sendKeys(sheet.getRow(1).getCell(1).getStringCellValue());
+		 driver.findElement(By.id("ticketNo")).sendKeys(String.valueOf((int)sheet.getRow(1).getCell(2).getNumericCellValue()));
+		 Thread.sleep(2500);
 		
 	}
 	
