@@ -51,8 +51,8 @@ String url = "http://localhost:8080/application/";
 		for(String winHandle : driver.getWindowHandles()){
     			driver.switchTo().window(winHandle);
 		}
-		String url = driver.getCurrentUrl();
-		print(currentURL)
+		String currentURL = driver.getCurrentUrl();
+		System.out.println(currentURL)
 		actualTitle = driver.getTitle();
        		assertTrue("Bootstrap Example".equals(actualTitle));
 		driver.findElement(By.xpath("")).click();// vegetarian xpath
@@ -79,9 +79,20 @@ String url = "http://localhost:8080/application/";
 		 
 		 driver.findElement(By.id("mobile")).sendKeys(String.valueOf((int)sheet.getRow(1).getCell(3).getNumericCellValue()));
 		 
-		 driver.findElement(By.id("email")).sendKeys(sheet.getRow(1).getCell(1).getStringCellValue());
-		 driver.findElement(By.id("ticketNo")).sendKeys(String.valueOf((int)sheet.getRow(1).getCell(2).getNumericCellValue()));
-		 Thread.sleep(2500);
+		 driver.findElement(By.id("")).click(); // submit ka xpath
+		 print(driver.findElement(By.id("")).getText()) // direct message ka xpath/id
+		 
+		 10 th status column
+		 
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		for(WebElement link: links){
+			if(link.getText().equals("Home Delivery")){
+				print(home .....)
+			}
+		}
+		driver.findElement(By.linkText("")).click(); // only name of weekend offer
+		
+		 
 		
 	}
 	
