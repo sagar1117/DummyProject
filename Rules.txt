@@ -64,7 +64,10 @@ public class Demo001_JUnitAnnotations {
 		
 		
 Hello faraz here		
-		
+
+
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(scrFile, new File("/root/Desktop/user_repo/To_Participant/Gallery.png"));
 		
 		
 		
