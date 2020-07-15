@@ -71,8 +71,11 @@ File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		
 		
-		
-		
+String message = System.out.println(driver.findElement(By.id("")).getText()) // direct message ka xpath/id
+sheet.getRow(1).createCell(4).setCellValue(message);
+FileOutputStream filestream1 = new FileOutputStream(filepath);
+workbook.write(filestream1);
+workbook.close();
 		
 		
 		
