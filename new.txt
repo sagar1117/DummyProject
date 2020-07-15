@@ -1,0 +1,78 @@
+package solution;
+
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Submit {
+
+WebDriver driver=null;
+String url = "http://localhost:8080/application/";
+
+	@Before
+	public void setUp() {
+		 System.setProperty("webdriver.gecko.driver", "/root/Desktop/SuppliedFiles/geckodriver"); 
+		 driver = new FirefoxDriver();
+		 driver.get(url);
+		 driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+		 driver.manage().window().maximize();
+	}
+
+	@Test
+	public void test() throws Exception{
+		String winHandleBefore = driver.getWindowHandle();
+
+		// Perform the click operation that opens new window
+		//click on order now by xpath
+		driver.findElement(By.id("")).click();
+		
+
+		// Switch to new window opened
+		for(String winHandle : driver.getWindowHandles()){
+    			driver.switchTo().window(winHandle);
+		}
+		String currentURL =  driver.Url;
+		print(currentURL)
+		actualTitle = driver.getTitle();
+       		assertTrue("Bootstrap Example".equals(actualTitle));
+		driver.findElement(By.xpath("")).click();// vegetarian xpath
+		Select dropDown = new Select(driver.findElement(By....)));
+		List<WebElement> e = dropDown.getOptions();
+		int itemCount = e.size();
+
+		for(int l = 0; l < itemCount; l++)
+		{
+    			System.out.println(e.get(l).getText());
+		}
+		
+		
+		
+	}
+	
+	@After
+	public void tearDown() {
+		driver.close();
+		driver.quit();
+	}
+
+}
