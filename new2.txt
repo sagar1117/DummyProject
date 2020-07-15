@@ -100,6 +100,8 @@ String url = "http://localhost:8080/application/";
 		 }
 		 driver.findElement(By.id("gallery wala")).click();
 		 
+		 File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(scrFile, new File("/root/Desktop/user_repo/To_Participant/Image.png"));
 		
 	}
 	
